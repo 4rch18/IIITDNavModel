@@ -1,0 +1,60 @@
+/*
+    navbar styling
+*/
+
+#nav-bar-main {
+    background-color: #fff;
+    /*box-shadow: 0px 3px 8px #111;*/
+    z-index: 900;
+    opacity: 0.9;
+}
+
+#nav-bar {
+    height: 75px;
+    /*padding-right: 85px;*/
+    margin-top: 0px;
+    /*width: 1024px;*/
+
+}
+
+#nav-bar:hover {
+    opacity: 0.98;
+}
+
+#nav-bar ul {
+    /*position: fixed;*/
+    list-style: none;
+    padding: 29px 0 20px 0;
+}
+
+#nav-bar div:first-child {
+    display: block;
+    height: 10px;
+    background-color: #fff;
+}
+
+#nav-bar li {
+    /*float: right;*/
+    display: inline;
+    /*background-color: #efefef;*/
+    color: #777;
+    padding: 20px 40px 22px 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#nav-bar li:hover {
+    color: #3fada8;
+    border-bottom: 5px solid #3fada8;
+    /*box-shadow: inset 0px -5px 5px #3fada8;*/
+    /*background-color:#ddd;*/
+}
+
+.nav-bar-font {
+    margin-left: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#nav-bar a:link, a:visited, a:hover, a:active, .mosaic-block a:link, a:visited, a:hover, a:active, .mosaic-block2 a:link, a:visited, a:hover, a:active, .panel a:link, a:visited, a:hover, a:active {
+    text-decoration: none !important;
+}
