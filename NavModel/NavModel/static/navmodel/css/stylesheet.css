@@ -1,60 +1,170 @@
-/*
-    navbar styling
-*/
-
-#nav-bar-main {
-    background-color: #fff;
-    /*box-shadow: 0px 3px 8px #111;*/
-    z-index: 900;
-    opacity: 0.9;
+body {
+    font-family: 'Arvo', serif !important;
 }
 
-#nav-bar {
-    height: 75px;
-    /*padding-right: 85px;*/
-    margin-top: 0px;
-    /*width: 1024px;*/
-
+.navbar-custom a:link, .navbar-custom a:active, .navbar-custom a:visited, .navbar-custom a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
-#nav-bar:hover {
-    opacity: 0.98;
+.navbar-custom a:hover li {
+    /*background-color: #222;
+    box-shadow: inset 0 0 10px #111;
+    -webkit-box-shadow: inset 0 0 10px #111;
+    -moz-box-shadow: inset 0 0 10px #111;*/
+    color:#6699ff;
+    text-shadow: 0 0 2px #6699ff;
 }
 
-#nav-bar ul {
-    /*position: fixed;*/
+.navbar-custom {
+    z-index:100;
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    position: relative;
+    box-shadow: inset -5px 0px 30px #111;
+}
+
+.navbar-custom ul {
     list-style: none;
-    padding: 29px 0 20px 0;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0;
+    font-size: 40px;
 }
-
-#nav-bar div:first-child {
+.navbar-custom li {
     display: block;
-    height: 10px;
-    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0 0 2px white;
 }
 
-#nav-bar li {
-    /*float: right;*/
-    display: inline;
-    /*background-color: #efefef;*/
-    color: #777;
-    padding: 20px 40px 22px 40px;
-    letter-spacing: 1px;
-    cursor: pointer;
+.content-main {
+    background-color: #ee9911;
+    height: 100%;
+    z-index: 0;
 }
 
-#nav-bar li:hover {
-    color: #3fada8;
-    border-bottom: 5px solid #3fada8;
-    /*box-shadow: inset 0px -5px 5px #3fada8;*/
-    /*background-color:#ddd;*/
+#area-hover {
+    margin:-700px 0 0 200px;
+    width: 1024px;
 }
 
-.nav-bar-font {
-    margin-left: 5px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#dining-info, #acad-info, #lib-info, .dining, .acad, .lib {
+    z-index: 100;
 }
 
-#nav-bar a:link, a:visited, a:hover, a:active, .mosaic-block a:link, a:visited, a:hover, a:active, .mosaic-block2 a:link, a:visited, a:hover, a:active, .panel a:link, a:visited, a:hover, a:active {
-    text-decoration: none !important;
+#dining-info, #acad-info, #lib-info {
+	position:absolute;
+	background-color:#333;
+	border:1px #999 solid;
+	border-radius:5px;
+    display:none;
+    box-shadow: 0 0 30px #555;
+}
+
+#dining-info table, #acad-info table, #lib-info table, #dining-info table tr, #acad-info table tr, #lib-info table tr, #dining-info table td, #acad-info table td, #lib-info table td {
+	margin:0;
+	padding:0;
+}
+
+#dining-info, #acad-info, #lib-info {
+    margin:0;
+    padding:10px;
+}
+
+
+#dining-info {
+	margin-top:-75px;
+	margin-left:150px;
+}
+
+
+#acad-info {
+	margin-top:-75px;
+	margin-left:120px;
+}
+
+
+#lib-info {
+	margin-top:-100px;
+	margin-left:590px;
+}
+
+.dining:hover #dining-info, .acad:hover #acad-info, .lib:hover #lib-info, .acad:hover #main-info{
+	display:block;
+}
+
+table th {
+    font-size: 22px;
+    padding: 3px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.info-head, .info-head-din {
+	padding:10px 0px 0 5px !important;
+	font-weight:bold;
+	text-align:left;
+}
+
+.info-head-din {
+	width:50%;
+	padding-left:15px !important;
+}
+
+.info-head, .info-content {
+	color:#fff;
+    font-size: 14px;
+}
+
+.info-content{
+	padding:10px 10px 0 0px !important;
+}
+
+#dining-info table, #acad-info table, #lib-info table{
+	color:#ccc;
+}
+
+@media (max-width: 1200px) {
+    .navbar-custom {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .navbar-custom ul {
+        padding: 0px 0 10px 0;
+        font-size: 25px;
+    }
+
+    .navbar-custom li {
+        padding-top: 15px;
+    }
+
+    .content-main {
+        height: auto;
+    }
+
+    #dining-info, #acad-info, #lib-info {
+        display:block;
+    }
+
+    #dining-info {
+        margin-top:125px;
+        margin-left:-150px;
+    }
+
+
+    #acad-info {
+        margin-top:200px;
+        margin-left:220px;
+    }
+
+
+    #lib-info {
+        margin-top:100px;
+        margin-left:800px;
+    }
 }

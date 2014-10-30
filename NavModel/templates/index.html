@@ -3,6 +3,7 @@
 <head>
     <title>IIITD Navigation Model</title>
 
+    <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ STATIC_URL }}navmodel/css/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" type="text/css">
 
@@ -10,26 +11,154 @@
 
 <body>
 
-<div class="container">
-
-    <div class="row">
-        <div id="nav-bar" class="navbar-collapse">
-            <ul class="navbar-right">
-                <li>Home</li>
-                <li>Academic</li>
-                <li>Dining</li>
-                <li>Library</li>
-                <li>Contact Us</li>
-            </ul>
+        <div class="col-lg-3 navbar-custom">
+            <div class="row">
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Academic</li></a>
+                    <a href=""><li>Library</li></a>
+                    <a href=""><li>Dining</li></a>
+                </ul>
+            </div>
         </div>
-    </div>
-
-</div>
-
-
-<div class="row" style="background-color: #999;height:600px;margin-top:-5px;">
-</div>
-
+        <div class="col-lg-9 content-main">
+            <img src="{{ STATIC_URL }}navmodel/images/draft-main-1.png" style="position:relative;margin:40px 0 0 -475px;z-index:-1;" />
+            <div id="area-hover">
+						<a href="dining.html"><span class="dining"><img src="{{ STATIC_URL }}navmodel/images/location-draft-2.png" height="40px" style="position:relative;margin:-30px 0 0 75px;" \>
+							<div id="dining-info">
+								<table>
+									<tr><th colspan="3">The Dining Block</th></tr>
+									<tr>
+										<td colspan="3"><img src="{{ STATIC_URL }}navmodel/images/0-din.jpg"  style="width:300px;height:200px" \></td>
+									</tr>
+									<tr>
+										<td class="info-head">Cafeteria</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-0</td>
+									</tr>
+									<tr>
+										<td class="info-head">Stationary</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-0</td>
+									</tr>
+									<tr>
+										<td class="info-head">Mess</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-1</td>
+									</tr>
+									<tr>
+										<td class="info-head">Gym, Sports, Music</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-3</td>
+									</tr>
+								</table>
+							</div>
+						</span></a>
+						<a href="acad.html"><span class="acad"><img src="{{ STATIC_URL }}navmodel/images/location-draft-2.png" height="40px" style="position:relative;margin:-30px 0 0 500px;" \>
+							<div id="acad-info">
+								<!--<table>
+									<tr><th colspan="2">The Academic Block</th></tr>
+									<tr>
+										<td>info here</td>
+										<td><img src="images\acad.jpg"  style="width:200px;height:200px"  \></td>
+									</tr>
+								</table>-->
+								<table>
+									<tr><th colspan="6">The Academic Block</th></tr>
+									<tr>
+										<td colspan="6"><img src="{{ STATIC_URL }}navmodel/images/0-acad.jpg"  style="width:450px;height:300px"  \></td>
+									</tr>
+									<tr>
+										<td class="info-head">Classrooms</td>
+										<td class="info-content">:</td>
+										<td class="info-content" colspan="4">Floor-0 (C01,C02,C03), Floor-I (C11,C12,C13),<br />Floor-II (C21,C22,C23,C24)</td>
+									</tr>
+									<tr>
+										<td class="info-head">Cafe (CDx)</td>
+										<td class="info-content">:</td>
+										<td class="info-content" colspan="4">Floor-0</td>
+									</tr>
+									<tr>
+										<td class="info-head">IT Staff</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-1 (B-Wing),</td>
+										<td class="info-head">Admin</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-1 (A-Wing)</td>
+									</tr>
+									<tr>
+										<td class="info-head">Theory</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-2 (B-Wing),</td>
+										<td class="info-head">Biometrics</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-2 (A-Wing)</td>
+									</tr>
+									<tr>
+										<td class="info-head">Mobile</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-3 (B-Wing),</td>
+										<td class="info-head">Electronics</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-3 (A-Wing)</td>
+									</tr>
+									<tr>
+										<td class="info-head">Data Engg.</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-4 (B-Wing),</td>
+										<td class="info-head">Security</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-4 (A-Wing)</td>
+									</tr>
+									<tr>
+										<td class="info-head">Conference</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-5 (B-Wing),</td>
+										<td class="info-head">Director</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-5 (A-Wing)</td>
+									</tr>
+								</table>
+							</div>
+						</span></a>
+						<a href="lib.html"><span class="lib"><img src="{{ STATIC_URL }}navmodel/images/location-draft-2.png" height="40px" style="margin:60px 0 0 925px;" \>
+							<div id="lib-info">
+								<table>
+									<tr><th colspan="3">The Library</th></tr>
+									<tr>
+										<td colspan="3"><img src="{{ STATIC_URL }}navmodel/images/0-lib.jpg"  style="width:300px;height:200px"  \></td>
+									</tr>
+									<tr>
+										<td class="info-head">Sitting</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-0</td>
+									</tr>
+									<tr>
+										<td class="info-head">Library</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-1</td>
+									</tr>
+									<tr>
+										<td class="info-head">CSE Labs</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-2(L21, L22, L23)</td>
+									</tr>
+									<tr>
+										<td class="info-head">ECE Labs</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-3</td>
+									</tr>
+									<tr>
+										<td class="info-head">Projector Rooms</td>
+										<td class="info-content">:</td>
+										<td class="info-content">Floor-0, Floor-2, Floor-3</td>
+									</tr>
+								</table>
+							</div>
+						</span></a>
+						<!--<img alt="Image Area" \>-->
+					</div>
+        </div>
 
 </body>
 
